@@ -4,12 +4,10 @@ import { useModelList } from './ContextList'
 export const AppContext = createContext(null);
 
 const ContextProvider = (props) => {
-  const context = {
-    useModelList
-  }
+  const value = useModelList();
 
   return (
-    <AppContext.Provider value={context}>
+    <AppContext.Provider value={value}>
       {props.children}
     </AppContext.Provider>
   )

@@ -5,7 +5,7 @@ import { AppContext } from './context/ContextProvider';
 import Search from '../../components/search-box/search';
 import { requestToken } from '../utils/firebase';
 
-const App = () => {
+const AppV2 = () => {
   const {
     monsters,
     setSearchField,
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Monster Rolodex</h1>
+      <h1>Monster Rolodex V2</h1>
       <Search setSearchField={setSearchField} />
       <CardList monsters={monsters} />
     </div>
@@ -25,4 +25,4 @@ const App = () => {
   
 }
 
-export default App;
+export default AppV2;
